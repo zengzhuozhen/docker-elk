@@ -1,0 +1,64 @@
+version: '3.4'
+services:
+    elasticsearch:
+            image: elasticsearch:7.4.1
+            container_name: elasticsearch
+            environment:
+                    - TIMEZONE=Asia/ShangHai
+                    - discovery.type=single-node
+            restart: always
+            ports:
+                - "9200:9200"
+                - "9300:9300"
+            networks:
+                - elk_network
+    kibana:
+            image: kibana:7.4.1
+            container_name: kibana
+            environment:
+                    - TIMEZONE=Asia/ShangHai
+            restart: always
+            ports:
+                - "5601:5601"
+            networks:
+                - elk_network
+            depends_on:
+                - elasticsearch
+
+    logstash:
+            image: logstash:7.4.1
+            container_name: logstash
+            environment:
+                    - TIMEZONE=Asia/ShangHai 
+            restart: always
+            ports:
+                - "5044:5044"
+                - "9600:9600"
+            networks:
+                - elk_network
+            volumes:
+                - ./logstash/config:/usr/share/logstash/config
+                - ./logstash/pipeline:/usr/share/logstash/pipeline
+            depends_on:
+                - kibana
+
+
+    filebeat:
+            image: elastic/filebeat:7.4.1
+            container_name: filebeat
+            environment:
+                    - TIMEZONE=Asia/ShangHai
+            restart: always
+            networks:
+                - elk_network
+            volumes:
+                - ./filebeat:/usr/share/filebeat
+                - ~/Desktop/log:/usr/share/log
+            depends_on:
+                - logstash
+
+
+networks:
+    elk_network:
+        driver: bridge
+

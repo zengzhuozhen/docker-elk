@@ -1,0 +1,22 @@
+filebeat.inputs:
+- type: log
+  paths:
+      - /usr/share/log/*.log
+  enable: true
+
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
+processors:
+- add_cloud_metadata: ~
+
+  #output.elasticsearch:
+  #hosts: '172.25.0.2:9200'
+  #username: '${ELASTICSEARCH_USERNAME:}'
+  #password: '${ELASTICSEARCH_PASSWORD:}'
+
+output.logstash:
+  hosts: 'logstash:5044'
+  enable: true
