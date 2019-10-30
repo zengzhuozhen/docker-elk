@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ELK (Elasticsearch-Logstash-Kibana)
 
 ##docker Images
