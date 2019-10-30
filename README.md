@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ELK (Elasticsearch-Logstash-Kibana)
 
 ##docker Images
@@ -34,3 +35,4 @@ example :
 
 在生产环境中,filebeat 和 logstash 不会一起部署,当filebeat单独部署的时候，需要修改filebeat.yml
 的 output 指向 logstash
+
