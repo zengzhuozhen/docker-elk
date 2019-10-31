@@ -1,0 +1,59 @@
+2019-10-31T09:23:58.863+0800	INFO	instance/beat.go:607	Home path: [/home/zzz/Desktop/project/elk/filebeat] Config path: [/home/zzz/Desktop/project/elk/filebeat] Data path: [/home/zzz/Desktop/project/elk/filebeat/data] Logs path: [/home/zzz/Desktop/project/elk/filebeat/logs]
+2019-10-31T09:23:58.863+0800	INFO	instance/beat.go:615	Beat ID: 16a2621b-cdc5-465b-865a-aaf2c291068c
+2019-10-31T09:23:58.863+0800	INFO	[seccomp]	seccomp/seccomp.go:124	Syscall filter successfully installed
+2019-10-31T09:23:58.863+0800	INFO	[beat]	instance/beat.go:903	Beat info	{"system_info": {"beat": {"path": {"config": "/home/zzz/Desktop/project/elk/filebeat", "data": "/home/zzz/Desktop/project/elk/filebeat/data", "home": "/home/zzz/Desktop/project/elk/filebeat", "logs": "/home/zzz/Desktop/project/elk/filebeat/logs"}, "type": "filebeat", "uuid": "16a2621b-cdc5-465b-865a-aaf2c291068c"}}}
+2019-10-31T09:23:58.863+0800	INFO	[beat]	instance/beat.go:912	Build info	{"system_info": {"build": {"commit": "12ee6cd05c1bfdc69721ddab1f473417b1514576", "libbeat": "7.4.1", "time": "2019-10-22T16:22:37.000Z", "version": "7.4.1"}}}
+2019-10-31T09:23:58.863+0800	INFO	[beat]	instance/beat.go:915	Go runtime info	{"system_info": {"go": {"os":"linux","arch":"amd64","max_procs":6,"version":"go1.12.9"}}}
+2019-10-31T09:23:58.865+0800	INFO	[beat]	instance/beat.go:919	Host info	{"system_info": {"host": {"architecture":"x86_64","boot_time":"2019-10-31T08:29:22+08:00","containerized":false,"name":"zzz-PC","ip":["127.0.0.1/8","::1/128","192.168.1.234/24","fe80::e1f:78e0:9cd4:952e/64","172.17.0.1/16","172.20.0.1/16","fe80::42:35ff:fe54:332e/64","fe80::a432:aff:fead:b43a/64","fe80::c47c:aff:febf:dcc5/64","fe80::88e9:dcff:fe04:a6b4/64","172.18.0.1/16","fe80::42:39ff:fe9a:230c/64","fe80::e081:f0ff:fe04:d8/64","fe80::f499:4eff:fe3a:a308/64","fe80::9cda:a9ff:fea8:3b9c/64","fe80::3095:82ff:feb3:a2f1/64"],"kernel_version":"4.15.0-30deepin-generic","mac":["00:e0:70:ac:3d:9f","02:42:ea:f7:1b:e7","02:42:35:54:33:2e","a6:32:0a:ad:b4:3a","c6:7c:0a:bf:dc:c5","8a:e9:dc:04:a6:b4","02:42:39:9a:23:0c","e2:81:f0:04:00:d8","f6:99:4e:3a:a3:08","9e:da:a9:a8:3b:9c","32:95:82:b3:a2:f1"],"os":{"family":"","platform":"deepin","name":"Deepin","version":"15.11","major":15,"minor":11,"patch":0,"codename":"stable"},"timezone":"CST","timezone_offset_sec":28800,"id":"70b5042c0d2c4e129f26aa5ac4589940"}}}
+2019-10-31T09:23:58.865+0800	INFO	[beat]	instance/beat.go:948	Process info	{"system_info": {"process": {"capabilities": {"inheritable":null,"permitted":null,"effective":null,"bounding":["chown","dac_override","dac_read_search","fowner","fsetid","kill","setgid","setuid","setpcap","linux_immutable","net_bind_service","net_broadcast","net_admin","net_raw","ipc_lock","ipc_owner","sys_module","sys_rawio","sys_chroot","sys_ptrace","sys_pacct","sys_admin","sys_boot","sys_nice","sys_resource","sys_time","sys_tty_config","mknod","lease","audit_write","audit_control","setfcap","mac_override","mac_admin","syslog","wake_alarm","block_suspend","audit_read"],"ambient":null}, "cwd": "/home/zzz/Desktop/project/elk/filebeat", "exe": "/home/zzz/Desktop/project/elk/filebeat/filebeat", "name": "filebeat", "pid": 17463, "ppid": 16383, "seccomp": {"mode":"filter","no_new_privs":true}, "start_time": "2019-10-31T09:23:58.300+0800"}}}
+2019-10-31T09:23:58.865+0800	INFO	instance/beat.go:292	Setup Beat: filebeat; Version: 7.4.1
+2019-10-31T09:23:58.866+0800	INFO	[publisher]	pipeline/module.go:97	Beat name: zzz-PC
+2019-10-31T09:23:58.866+0800	INFO	beater/filebeat.go:92	Enabled modules/filesets:  (), nginx (access, error)
+2019-10-31T09:23:58.867+0800	WARN	beater/filebeat.go:152	Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2019-10-31T09:23:58.867+0800	INFO	[monitoring]	log/log.go:118	Starting metrics logging every 30s
+2019-10-31T09:23:58.867+0800	INFO	instance/beat.go:422	filebeat start running.
+2019-10-31T09:23:58.867+0800	WARN	beater/filebeat.go:181	Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2019-10-31T09:23:58.867+0800	INFO	registrar/registrar.go:145	Loading registrar data from /home/zzz/Desktop/project/elk/filebeat/data/registry/filebeat/data.json
+2019-10-31T09:23:58.867+0800	INFO	registrar/registrar.go:152	States Loaded from registrar: 3
+2019-10-31T09:23:58.867+0800	WARN	beater/filebeat.go:368	Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2019-10-31T09:23:58.867+0800	INFO	crawler/crawler.go:72	Loading Inputs: 2
+2019-10-31T09:23:58.867+0800	INFO	log/input.go:152	Configured paths: [/var/log/nginx/access.log*]
+2019-10-31T09:23:58.867+0800	INFO	input/input.go:114	Starting input of type: log; ID: 5701547728873925540 
+2019-10-31T09:23:58.868+0800	INFO	log/input.go:152	Configured paths: [/var/log/nginx/error.log*]
+2019-10-31T09:23:58.868+0800	INFO	input/input.go:114	Starting input of type: log; ID: 13681817491927077703 
+2019-10-31T09:23:58.868+0800	ERROR	log/input.go:501	Harvester could not be started on new file: /var/log/nginx/error.log, Err: error setting up harvester: Harvester setup failed. Unexpected file opening error: Failed opening /var/log/nginx/error.log: open /var/log/nginx/error.log: permission denied
+2019-10-31T09:23:58.870+0800	ERROR	log/input.go:501	Harvester could not be started on new file: /var/log/nginx/access.log, Err: error setting up harvester: Harvester setup failed. Unexpected file opening error: Failed opening /var/log/nginx/access.log: open /var/log/nginx/access.log: permission denied
+2019-10-31T09:23:58.870+0800	INFO	log/input.go:152	Configured paths: [/home/zzz/Desktop/project/elk/filebeat/usr/share/log/access.log]
+2019-10-31T09:23:58.870+0800	INFO	log/input.go:152	Configured paths: [/home/zzz/Desktop/project/elk/filebeat/usr/share/log/error.log]
+2019-10-31T09:23:58.870+0800	INFO	crawler/crawler.go:106	Loading and starting Inputs completed. Enabled inputs: 2
+2019-10-31T09:23:58.870+0800	INFO	cfgfile/reload.go:171	Config reloader started
+2019-10-31T09:23:58.871+0800	INFO	log/input.go:152	Configured paths: [/home/zzz/Desktop/project/elk/filebeat/usr/share/log/access.log]
+2019-10-31T09:23:58.872+0800	INFO	log/input.go:152	Configured paths: [/home/zzz/Desktop/project/elk/filebeat/usr/share/log/error.log]
+2019-10-31T09:23:58.872+0800	INFO	input/input.go:114	Starting input of type: log; ID: 16656770449548203329 
+2019-10-31T09:23:58.872+0800	INFO	input/input.go:114	Starting input of type: log; ID: 18242337832273153054 
+2019-10-31T09:23:58.872+0800	INFO	cfgfile/reload.go:226	Loading of config files completed.
+2019-10-31T09:24:01.863+0800	INFO	add_cloud_metadata/add_cloud_metadata.go:87	add_cloud_metadata: hosting provider type not detected.
+2019-10-31T09:24:08.869+0800	ERROR	log/input.go:501	Harvester could not be started on new file: /var/log/nginx/error.log, Err: error setting up harvester: Harvester setup failed. Unexpected file opening error: Failed opening /var/log/nginx/error.log: open /var/log/nginx/error.log: permission denied
+2019-10-31T09:24:08.870+0800	ERROR	log/input.go:501	Harvester could not be started on new file: /var/log/nginx/access.log, Err: error setting up harvester: Harvester setup failed. Unexpected file opening error: Failed opening /var/log/nginx/access.log: open /var/log/nginx/access.log: permission denied
+2019-10-31T09:24:18.869+0800	ERROR	log/input.go:501	Harvester could not be started on new file: /var/log/nginx/error.log, Err: error setting up harvester: Harvester setup failed. Unexpected file opening error: Failed opening /var/log/nginx/error.log: open /var/log/nginx/error.log: permission denied
+2019-10-31T09:24:18.870+0800	ERROR	log/input.go:501	Harvester could not be started on new file: /var/log/nginx/access.log, Err: error setting up harvester: Harvester setup failed. Unexpected file opening error: Failed opening /var/log/nginx/access.log: open /var/log/nginx/access.log: permission denied
+2019-10-31T09:24:25.798+0800	INFO	beater/filebeat.go:443	Stopping filebeat
+2019-10-31T09:24:25.798+0800	INFO	crawler/crawler.go:139	Stopping Crawler
+2019-10-31T09:24:25.798+0800	INFO	crawler/crawler.go:149	Stopping 2 inputs
+2019-10-31T09:24:25.798+0800	INFO	cfgfile/reload.go:229	Dynamic config reloader stopped
+2019-10-31T09:24:25.798+0800	INFO	[reload]	cfgfile/list.go:118	Stopping 1 runners ...
+2019-10-31T09:24:25.798+0800	INFO	input/input.go:149	input ticker stopped
+2019-10-31T09:24:25.798+0800	INFO	input/input.go:167	Stopping Input: 16656770449548203329
+2019-10-31T09:24:25.798+0800	INFO	input/input.go:149	input ticker stopped
+2019-10-31T09:24:25.798+0800	INFO	input/input.go:149	input ticker stopped
+2019-10-31T09:24:25.798+0800	INFO	input/input.go:167	Stopping Input: 13681817491927077703
+2019-10-31T09:24:25.798+0800	INFO	input/input.go:167	Stopping Input: 5701547728873925540
+2019-10-31T09:24:25.798+0800	INFO	input/input.go:149	input ticker stopped
+2019-10-31T09:24:25.798+0800	INFO	input/input.go:167	Stopping Input: 18242337832273153054
+2019-10-31T09:24:25.798+0800	INFO	crawler/crawler.go:165	Crawler stopped
+2019-10-31T09:24:25.798+0800	INFO	registrar/registrar.go:367	Stopping Registrar
+2019-10-31T09:24:25.798+0800	INFO	registrar/registrar.go:293	Ending Registrar
+2019-10-31T09:24:25.801+0800	INFO	[monitoring]	log/log.go:153	Total non-zero metrics	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":10,"time":{"ms":15}},"total":{"ticks":30,"time":{"ms":40},"value":30},"user":{"ticks":20,"time":{"ms":25}}},"handles":{"limit":{"hard":1048576,"soft":1024},"open":6},"info":{"ephemeral_id":"7697788d-ed79-4dc6-be2a-386b3159dbab","uptime":{"ms":26950}},"memstats":{"gc_next":8308192,"memory_alloc":4897536,"memory_total":11830480,"rss":44294144},"runtime":{"goroutines":12}},"filebeat":{"harvester":{"open_files":0,"running":0}},"libbeat":{"config":{"module":{"running":0},"reloads":1},"output":{"type":"logstash"},"pipeline":{"clients":0,"events":{"active":0}}},"registrar":{"states":{"current":3},"writes":{"success":1,"total":1}},"system":{"cpu":{"cores":6},"load":{"1":0.27,"15":0.4,"5":0.42,"norm":{"1":0.045,"15":0.0667,"5":0.07}}}}}}
+2019-10-31T09:24:25.801+0800	INFO	[monitoring]	log/log.go:154	Uptime: 26.951380067s
+2019-10-31T09:24:25.801+0800	INFO	[monitoring]	log/log.go:131	Stopping metrics logging.
+2019-10-31T09:24:25.801+0800	INFO	instance/beat.go:432	filebeat stopped.

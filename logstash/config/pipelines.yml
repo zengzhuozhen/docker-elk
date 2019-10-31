@@ -3,4 +3,7 @@
 #   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
 
 - pipeline.id: main
-  path.config: "/usr/share/logstash/pipeline"
+  path.config: "/usr/share/logstash/pipeline/logstash.conf"
+
+  #- pipeline.id: nginx
+  #path.config: "/usr/share/logstash/pipeline/nginx.conf"

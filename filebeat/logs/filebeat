@@ -1,0 +1,2 @@
+2019-10-31T01:32:03.831Z	INFO	instance/beat.go:607	Home path: [/usr/share/filebeat] Config path: [/usr/share/filebeat] Data path: [/usr/share/filebeat/data] Logs path: [/usr/share/filebeat/logs]
+2019-10-31T01:32:03.833Z	INFO	instance/beat.go:615	Beat ID: 16a2621b-cdc5-465b-865a-aaf2c291068c

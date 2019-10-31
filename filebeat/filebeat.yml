@@ -1,8 +1,12 @@
-filebeat.inputs:
-- type: log
-  paths:
-      - /usr/share/log/*.log
-  enable: true
+#filebeat.inputs:
+#- type: log
+#  paths:
+#      - /usr/share/log/*.log
+#  enable: true
+
+filebeat.modules:
+- module: nginx
+
 
 filebeat.config:
   modules:

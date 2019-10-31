@@ -34,3 +34,9 @@ pwd
 yum install vim 
 su
 exit
+ls
+filebeat -e -c  filebeat.yml  -configtest -d "publish"
+filebeat -e -c  filebeat.yml  -configtest -d 
+filebeat -e -c filebeat.yml -configtest -d "publish" 
+filebeat 
+exit

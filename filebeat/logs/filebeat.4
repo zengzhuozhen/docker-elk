@@ -1,0 +1,52 @@
+2019-10-31T01:20:26.967Z	INFO	instance/beat.go:607	Home path: [/usr/share/filebeat] Config path: [/usr/share/filebeat] Data path: [/usr/share/filebeat/data] Logs path: [/usr/share/filebeat/logs]
+2019-10-31T01:20:26.968Z	INFO	instance/beat.go:615	Beat ID: 16a2621b-cdc5-465b-865a-aaf2c291068c
+2019-10-31T01:20:26.969Z	INFO	[seccomp]	seccomp/seccomp.go:124	Syscall filter successfully installed
+2019-10-31T01:20:26.969Z	INFO	[beat]	instance/beat.go:903	Beat info	{"system_info": {"beat": {"path": {"config": "/usr/share/filebeat", "data": "/usr/share/filebeat/data", "home": "/usr/share/filebeat", "logs": "/usr/share/filebeat/logs"}, "type": "filebeat", "uuid": "16a2621b-cdc5-465b-865a-aaf2c291068c"}}}
+2019-10-31T01:20:26.969Z	INFO	[beat]	instance/beat.go:912	Build info	{"system_info": {"build": {"commit": "12ee6cd05c1bfdc69721ddab1f473417b1514576", "libbeat": "7.4.1", "time": "2019-10-22T16:22:37.000Z", "version": "7.4.1"}}}
+2019-10-31T01:20:26.969Z	INFO	[beat]	instance/beat.go:915	Go runtime info	{"system_info": {"go": {"os":"linux","arch":"amd64","max_procs":6,"version":"go1.12.9"}}}
+2019-10-31T01:20:26.969Z	INFO	[beat]	instance/beat.go:919	Host info	{"system_info": {"host": {"architecture":"x86_64","boot_time":"2019-10-31T00:29:22Z","containerized":true,"name":"6a3b1e1e87f7","ip":["127.0.0.1/8","172.18.0.5/16"],"kernel_version":"4.15.0-30deepin-generic","mac":["02:42:ac:12:00:05"],"os":{"family":"redhat","platform":"centos","name":"CentOS Linux","version":"7 (Core)","major":7,"minor":6,"patch":1810,"codename":"Core"},"timezone":"UTC","timezone_offset_sec":0}}}
+2019-10-31T01:20:26.970Z	INFO	[beat]	instance/beat.go:948	Process info	{"system_info": {"process": {"capabilities": {"inheritable":["chown","dac_override","fowner","fsetid","kill","setgid","setuid","setpcap","net_bind_service","net_raw","sys_chroot","mknod","audit_write","setfcap"],"permitted":null,"effective":null,"bounding":["chown","dac_override","fowner","fsetid","kill","setgid","setuid","setpcap","net_bind_service","net_raw","sys_chroot","mknod","audit_write","setfcap"],"ambient":null}, "cwd": "/usr/share/filebeat", "exe": "/usr/share/filebeat/filebeat", "name": "filebeat", "pid": 60, "ppid": 22, "seccomp": {"mode":"filter","no_new_privs":true}, "start_time": "2019-10-31T01:20:26.410Z"}}}
+2019-10-31T01:20:26.970Z	INFO	instance/beat.go:292	Setup Beat: filebeat; Version: 7.4.1
+2019-10-31T01:20:26.970Z	INFO	[publisher]	pipeline/module.go:97	Beat name: 6a3b1e1e87f7
+2019-10-31T01:20:26.971Z	INFO	beater/filebeat.go:92	Enabled modules/filesets: nginx (access, error),  ()
+2019-10-31T01:20:26.971Z	WARN	beater/filebeat.go:152	Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2019-10-31T01:20:26.971Z	INFO	instance/beat.go:422	filebeat start running.
+2019-10-31T01:20:26.971Z	WARN	beater/filebeat.go:181	Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2019-10-31T01:20:26.971Z	INFO	[monitoring]	log/log.go:118	Starting metrics logging every 30s
+2019-10-31T01:20:26.971Z	INFO	registrar/registrar.go:145	Loading registrar data from /usr/share/filebeat/data/registry/filebeat/data.json
+2019-10-31T01:20:26.971Z	INFO	registrar/registrar.go:152	States Loaded from registrar: 3
+2019-10-31T01:20:26.971Z	WARN	beater/filebeat.go:368	Filebeat is unable to load the Ingest Node pipelines for the configured modules because the Elasticsearch output is not configured/enabled. If you have already loaded the Ingest Node pipelines or are using Logstash pipelines, you can ignore this warning.
+2019-10-31T01:20:26.971Z	INFO	crawler/crawler.go:72	Loading Inputs: 2
+2019-10-31T01:20:26.972Z	INFO	log/input.go:152	Configured paths: [/var/log/nginx/access.log*]
+2019-10-31T01:20:26.972Z	INFO	input/input.go:114	Starting input of type: log; ID: 6975272627657892238 
+2019-10-31T01:20:26.972Z	INFO	log/input.go:152	Configured paths: [/var/log/nginx/error.log*]
+2019-10-31T01:20:26.972Z	INFO	input/input.go:114	Starting input of type: log; ID: 10524145458567240045 
+2019-10-31T01:20:26.973Z	INFO	log/input.go:152	Configured paths: [/usr/share/filebeat/usr/share/log/access.log]
+2019-10-31T01:20:26.974Z	INFO	log/input.go:152	Configured paths: [/usr/share/filebeat/usr/share/log/error.log]
+2019-10-31T01:20:26.974Z	INFO	crawler/crawler.go:106	Loading and starting Inputs completed. Enabled inputs: 2
+2019-10-31T01:20:26.974Z	INFO	cfgfile/reload.go:171	Config reloader started
+2019-10-31T01:20:26.975Z	INFO	log/input.go:152	Configured paths: [/usr/share/filebeat/usr/share/log/access.log]
+2019-10-31T01:20:26.975Z	INFO	log/input.go:152	Configured paths: [/usr/share/filebeat/usr/share/log/error.log]
+2019-10-31T01:20:26.975Z	INFO	input/input.go:114	Starting input of type: log; ID: 14482009000300879723 
+2019-10-31T01:20:26.975Z	INFO	input/input.go:114	Starting input of type: log; ID: 15202779701513111092 
+2019-10-31T01:20:26.975Z	INFO	cfgfile/reload.go:226	Loading of config files completed.
+2019-10-31T01:20:29.727Z	INFO	beater/filebeat.go:443	Stopping filebeat
+2019-10-31T01:20:29.727Z	INFO	crawler/crawler.go:139	Stopping Crawler
+2019-10-31T01:20:29.727Z	INFO	crawler/crawler.go:149	Stopping 2 inputs
+2019-10-31T01:20:29.727Z	INFO	cfgfile/reload.go:229	Dynamic config reloader stopped
+2019-10-31T01:20:29.727Z	INFO	input/input.go:149	input ticker stopped
+2019-10-31T01:20:29.727Z	INFO	input/input.go:149	input ticker stopped
+2019-10-31T01:20:29.727Z	INFO	input/input.go:167	Stopping Input: 6975272627657892238
+2019-10-31T01:20:29.727Z	INFO	input/input.go:167	Stopping Input: 10524145458567240045
+2019-10-31T01:20:29.727Z	INFO	[reload]	cfgfile/list.go:118	Stopping 1 runners ...
+2019-10-31T01:20:29.727Z	INFO	input/input.go:149	input ticker stopped
+2019-10-31T01:20:29.727Z	INFO	input/input.go:167	Stopping Input: 14482009000300879723
+2019-10-31T01:20:29.727Z	INFO	input/input.go:149	input ticker stopped
+2019-10-31T01:20:29.727Z	INFO	input/input.go:167	Stopping Input: 15202779701513111092
+2019-10-31T01:20:29.727Z	INFO	crawler/crawler.go:165	Crawler stopped
+2019-10-31T01:20:29.727Z	INFO	registrar/registrar.go:367	Stopping Registrar
+2019-10-31T01:20:29.727Z	INFO	registrar/registrar.go:293	Ending Registrar
+2019-10-31T01:20:29.730Z	INFO	[monitoring]	log/log.go:153	Total non-zero metrics	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":10,"time":{"ms":13}},"total":{"ticks":30,"time":{"ms":35},"value":0},"user":{"ticks":20,"time":{"ms":22}}},"handles":{"limit":{"hard":1048576,"soft":1048576},"open":11},"info":{"ephemeral_id":"c2726cc5-da16-4460-8a6d-3a4291d15cb7","uptime":{"ms":2775}},"memstats":{"gc_next":7570304,"memory_alloc":4719640,"memory_total":11517560,"rss":43884544},"runtime":{"goroutines":33}},"filebeat":{"harvester":{"open_files":0,"running":0}},"libbeat":{"config":{"module":{"running":0},"reloads":1},"output":{"type":"logstash"},"pipeline":{"clients":0,"events":{"active":0}}},"registrar":{"states":{"current":3},"writes":{"success":1,"total":1}},"system":{"cpu":{"cores":6},"load":{"1":0.48,"15":0.45,"5":0.64,"norm":{"1":0.08,"15":0.075,"5":0.1067}}}}}}
+2019-10-31T01:20:29.730Z	INFO	[monitoring]	log/log.go:154	Uptime: 2.775680145s
+2019-10-31T01:20:29.730Z	INFO	[monitoring]	log/log.go:131	Stopping metrics logging.
+2019-10-31T01:20:29.730Z	INFO	instance/beat.go:432	filebeat stopped.
